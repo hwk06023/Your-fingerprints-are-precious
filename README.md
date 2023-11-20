@@ -20,8 +20,16 @@ Train Yolov8 instance segmentation model with dataset we made at Step 1.
 
 ### Step 3: Train Auto Encoder Model
 Train Auto Encoder model with Identity Loss to make model reconstruct input image as same as they can. Nature of Auto Encoder architecture will destroy subtle feature like fingerprint.
-<img src="https://media.discordapp.net/attachments/363994928533078018/1172355102410014770/image.png?ex=656003c5&is=654d8ec5&hm=c6a0225a4352f53d8e831c73f6991faa582715a091f47e1850fb99909886277b&=&width=960&height=405">
+<img src="img/3_read.png">
 
 ## Result
 We can check that fingerprint is efficiently destroyed without making discomfort to the human eye.
 <img src="https://media.discordapp.net/attachments/363994928533078018/1172357267149033603/image.png?ex=656005c9&is=654d90c9&hm=8387022a3166744b25d73ff85e971a49259dd36c8f5ded9731294a2fd45865a6&=&width=960&height=294">
+
+
+
+### Previous version
+
+[Check previous version](Fingerprint.md)
+
+
