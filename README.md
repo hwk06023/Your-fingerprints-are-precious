@@ -4,7 +4,23 @@
 The important of cameras in our society is increasing as the demand for Online Education, Video Conference, or SNS increases.  <br/>
 But resents high resolution cameras accidentally expose our important biometric information such as  fingerprints or iris. <br/>
 Exposed fingerprints can easily be copied and can pass electric security. <br/>
-So, we propose to manipulate biometric information automatically that enhance people’s biometric security.
+So, we propose to manipulate biometric information automatically that enhance people’s biometric security. <br/><br/><br/>
+
+### Related paper & news
+**Paper** <br/>
+Real-Time Flying Object Detection with YOLOv8, 2023, Object Detection/Segmentation/Classification, Configurable for fast and simple architecture for localizing fingerprints and iris in pixel level. Unlike Hand keypoint approach, it demands lots of fingerprint and iris data to train model.
+
+U-Net: Convolutional Networks for Biomedical Image Segmentation, 2015, Autoencoder, Can manipulate images' detailed information such as fingerprint without making discomfort of human vision. It doesn't conside
+
+
+
+<br/>
+
+
+### Our approach
+We propose to manipulate biometric information automatically that enhance people’s biometric security. <br/>
+We use Yolov8n Instance Segmentation model to detect iris and fingerprints. <br/>
+And we use Auto Encoder model to destroy fingerprint and iris. <br/><br/><br/>
 
 <br/>
 
@@ -30,7 +46,12 @@ We can check that fingerprint is efficiently destroyed without making discomfort
 
 ## Using Dataset
 
-We used Microsoft's [ASL Citizen](https://www.microsoft.com/en-us/research/project/asl-citizen/dataset-description/) the first crowdsourced isolated sign language video dataset for training our model. <br/>
+We used Microsoft's [ASL Citizen](https://www.microsoft.com/en-us/research/project/asl-citizen/dataset-description/) the first crowdsourced isolated sign language video dataset for training Yolov8n model. <br/>
+
+<img src="img/annotated.png" width="500">
+
+
+ <br/>
 
 <br/>
 
