@@ -8,21 +8,22 @@ So, we propose to manipulate biometric information automatically that enhance pe
 
 ### Related paper & news
 **Paper** <br/>
-Real-Time Flying Object Detection with YOLOv8, 2023, Object Detection/Segmentation/Classification, Configurable for fast and simple architecture for localizing fingerprints and iris in pixel level. Unlike Hand keypoint approach, it demands lots of fingerprint and iris data to train model.
+[Real-Time Flying Object Detection with YOLOv8](https://arxiv.org/abs/2305.09972), 2023, Object Detection/Segmentation/Classification, Configurable for fast and simple architecture for localizing fingerprints and iris in pixel level. Unlike Hand keypoint approach, it demands lots of fingerprint and iris data to train model.
 
-U-Net: Convolutional Networks for Biomedical Image Segmentation, 2015, Autoencoder, Can manipulate images' detailed information such as fingerprint without making discomfort of human vision. It doesn't conside
+[U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597), 2015, Autoencoder, Can manipulate images' detailed information such as fingerprint without making discomfort of human vision. It doesn't conside
 
-
-
-<br/>
+[고해상도로 찍은 이미지에서의 손가락 지문 채취 방지에 관한 연구](https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE09409018), 2020, 
 
 
-### Our approach
-We propose to manipulate biometric information automatically that enhance people’s biometric security. <br/>
-We use Yolov8n Instance Segmentation model to detect iris and fingerprints. <br/>
-And we use Auto Encoder model to destroy fingerprint and iris. <br/><br/><br/>
 
-<br/>
+**News** <br/>
+[Chaos Computer Clubs breaks iris recognition system](https://www.ccc.de/en/updates/2017/iriden) <br/>
+[Scientists Extract Fingerprints from Photos Taken From up to Three Meters Away](https://www.bleepingcomputer.com/news/security/scientists-extract-fingerprints-from-photos-taken-from-up-to-three-meters-away/#google_vignette)
+
+
+
+
+<br/><br/>
 
 ## Proposed model
 
