@@ -51,23 +51,34 @@ We used Microsoft's [ASL Citizen](https://www.microsoft.com/en-us/research/proje
 
 <img src="img/annotated.png" width="500">
 
+This Annotation task was automated by using [dlib.get_frontal_face_detector](get_IrisAnnotated.py)
 
- <br/>
 
 <br/>
-
-**Add**
-
-<br/><br/>
 
 
 ## Experiment
 
 How we performed experiments 
 
+### 1. Yolov8n Instance Segmentation
+
+|Class|Images|Instances|Box( P| R| mAP50|mAP50-95 )|
+|:---:|---:|---:|---:|---:|---:|---:|
+|all|217|666|0.831|0.725|0.82|0.456|
+|-|217|422|0.856|0.988|0.988|0.581|
+|-|217|244|0.806|0.461|0.653|0.331|
+
 <br/>
 
-**Add**
+Speed : 0.9ms preprocesse, 5.5ms inference, 0.0ms loss, 3.0ms postprocess (per image)
+
+<br/>
+
+### 2. Auto Encoder
+
+
+
 
 <br/><br/>
 
