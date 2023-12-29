@@ -35,8 +35,8 @@ Labeling & Annotating fingertip and iris from selfie dataset with instance segme
 Train Yolov8 nano model instance segmentation model with dataset we made at Step 1.
 <img src="https://media.discordapp.net/attachments/363994928533078018/1172354529510031360/image.png?ex=6560033d&is=654d8e3d&hm=6e2229a25d51d7ccfea00a6b28791a957cb8feb21d663ca7e44ad4c32ee00883&=&width=326&height=469">
 
-### Step 3: Train Auto Encoder Model
-Train Auto Encoder Architecture model with Identity Loss to make model reconstruct input image as same as they can. Nature of Auto Encoder architecture will destroy subtle feature like fingerprint.
+### Step 3: Train Reconstruction Model
+Train Auto Encoder & U-Net Architecture model with Identity Loss to make model reconstruct input image as same as they can. Nature of Auto Encoder architecture will destroy subtle feature like fingerprint.
 <img src="img/3_read.png">
 
 ### Result (= Output image)
@@ -53,6 +53,8 @@ We used Microsoft's [ASL Citizen](https://www.microsoft.com/en-us/research/proje
 <img src="img/annotated2.png" width="500">
 
 This Annotation task was automated by using [dlib.get_frontal_face_detector](get_IrisAnnotated.py)
+
+Additional, We used our fingerprints and iris dataset and Roboflow's dataset for training Auto Encoder & U-Net model. <br/>
 
 
 <br/>
@@ -76,23 +78,45 @@ Speed : 0.9ms preprocesse, 5.5ms inference, 0.0ms loss, 3.0ms postprocess (per i
 
 <br/>
 
-### 2. Auto Encoder
+### 2. Reconstruction
+
+#### - Speed
+
+| AutoEncoder (Vanilla) | AutoEncoder (Conv) | U-Net |
+|---:|---:|---:|
+| 0.0014ms | 0.0036ms | 0.05ms |
+
+#### - Result
+
+| Original | AutoEncoder (Vanilla) | AutoEncoder (Conv) | U-Net |
+|---:|---:|---:|--:|
+|<img src="img/original.png" width="200"> | <img src="img/aev.png" width="200"> | <img src="img/aefc.png" width="200"> | <img src="img/unet.png" width="200"> |
 
 
+<br/>
 
+### 3. Enhancement
+
+When Segmentation is incomplete, Since there is no guarantee that the autoencoder will always be the same color as the original image, apply a Gaussian filter to the mask to ensure the color lasts naturally.
+
+<img src='img/GaussianFilter.png' width=600>
 
 <br/><br/>
 
 
 ## Total result
 
-Result of our project
+### Fingerprints (part of the original image)
 
-<br/>
+**Before -> After**
 
-**Add**
+<img src='img/result1.png' width=400>
+<img src='img/result2.png' width=400>
+<img src='img/result3.png' width=400>
 
-<br/><br/>
+### Original Image
+
+<img src='img/resultall.png' width=400>
 
 
 
