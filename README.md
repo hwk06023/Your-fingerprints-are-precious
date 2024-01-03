@@ -1,4 +1,4 @@
-# Save Your Biometric Information
+# Your Fingerprints are precious
 
 ### Project explanation
 The important of cameras in our society is increasing as the demand for Online Education, Video Conference, or SNS increases.  <br/>
@@ -53,6 +53,7 @@ We used Microsoft's [ASL Citizen](https://www.microsoft.com/en-us/research/proje
 <img src="img/annotated2.png" width="500">
 
 This Annotation task was automated by using [dlib.get_frontal_face_detector](get_IrisAnnotated.py)
+
 
 Additional, We used our fingerprints and iris dataset and Roboflow's dataset for training Auto Encoder & U-Net model. <br/>
 
