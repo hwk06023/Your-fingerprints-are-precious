@@ -49,13 +49,13 @@ We can check that fingerprint is efficiently destroyed without making discomfort
 
 We used Microsoft's [ASL Citizen](https://www.microsoft.com/en-us/research/project/asl-citizen/dataset-description/) the first crowdsourced isolated sign language video dataset for training Yolov8n model. <br/>
 
-<img src="img/annotated1.png" width="500">
+<img src="img/annotated1.png" width="500"> <br/>
 <img src="img/annotated2.png" width="500">
 
 This Annotation task was automated by using [dlib.get_frontal_face_detector](get_IrisAnnotated.py) <br/>
 
-<img src="img/hagrid1.png" width="290"> 
-<img src="img/hagrid2.png" width="210"> <br/>
+<img src="img/hagrid1.png" width="200"> 
+<img src="img/hagrid2.png" width="180"> <br/>
 
 
 Additional, We used [hagrid dataset(FHD)](https://github.com/hukenovs/hagrid) and Roboflow's dataset  for training for reconstruct(U-net ..) model. <br/>
