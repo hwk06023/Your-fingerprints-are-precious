@@ -70,15 +70,17 @@ How we performed experiments
 
 ### 1. Yolov8n Instance Segmentation
 
+#### - Performance
+
 |Class|Images|Instances|Box( P| R| mAP50|mAP50-95 )|
 |:---:|---:|---:|---:|---:|---:|---:|
 |all|217|666|0.831|0.725|0.82|0.456|
 |-|217|422|0.856|0.988|0.988|0.581|
 |-|217|244|0.806|0.461|0.653|0.331|
 
-<br/>
+#### - Speed
 
-Speed : 0.9ms preprocesse, 5.5ms inference, 0.0ms loss, 3.0ms postprocess (per image)
+Speed : 0.9ms preprocesse, **5.5ms inference**, 0.0ms loss, 3.0ms postprocess (per image)
 
 <br/>
 
@@ -150,6 +152,12 @@ When Segmentation is incomplete, Since there is no guarantee that the autoencode
 
 
 ## Total result
+
+It works well with the original image and the result is as expected. <br/>
+
+5.5ms for inference, 0.0031s for reconstruction, 0.0001s for enhancement. <br/>
+So, Total **5.5032ms** for processing. <br/>
+It works **fps 181.5.** <br/>
 
 ### Fingerprints (part of the original image)
 
