@@ -52,10 +52,13 @@ We used Microsoft's [ASL Citizen](https://www.microsoft.com/en-us/research/proje
 <img src="img/annotated1.png" width="500">
 <img src="img/annotated2.png" width="500">
 
-This Annotation task was automated by using [dlib.get_frontal_face_detector](get_IrisAnnotated.py)
+This Annotation task was automated by using [dlib.get_frontal_face_detector](get_IrisAnnotated.py) <br/>
+
+<img src="img/hagrid1.png" width="290"> 
+<img src="img/hagrid2.png" width="210"> <br/>
 
 
-Additional, We used our fingerprints and iris dataset and Roboflow's dataset for training Auto Encoder & U-Net model. <br/>
+Additional, We used [hagrid dataset(FHD)](https://github.com/hukenovs/hagrid) and Roboflow's dataset  for training for reconstruct(U-net ..) model. <br/>
 
 
 <br/>
@@ -84,15 +87,56 @@ Speed : 0.9ms preprocesse, 5.5ms inference, 0.0ms loss, 3.0ms postprocess (per i
 #### - Speed
 
 | AutoEncoder (Vanilla) | AutoEncoder (Conv) | U-Net |
-|---:|---:|---:|
-| 0.0014ms | 0.0036ms | 0.05ms |
+|---:|---:|:---:|
+| 0.0014s | 0.0036s | 0.05s |
 
-#### - Result
+#### - Output
 
 | Original | AutoEncoder (Vanilla) | AutoEncoder (Conv) | U-Net |
 |---:|---:|---:|--:|
 |<img src="img/original.png" width="200"> | <img src="img/aev.png" width="200"> | <img src="img/aefc.png" width="200"> | <img src="img/unet.png" width="200"> |
 
+<br/>
+
+Due to the nature of skip-connection in U-net, performance is very good for reconstruction
+However, compared to other Auto Encoders, the experimental results show a drop in the speed area, 
+which will be very important when applied to real life such as real-time.
+We test various U-net models currently available and propose a U-Net structure-based reconstruction model 
+that performs the purpose of modulation with less damage. <br/>
+
+In order to further reduce the number of parameters, pruning was performed to remove the weight of the network based on the normalized value of the weight, but pruning was not performed because there was a problem that could create a sense of incompatibility in the picture where the color tone of the result value changed. <br/>
+
+<img src="img/Result_Unets.png" width=600>
+
+#### - Speed (with cuda)
+
+| U-Net3p | U-Net | U-Net_light |
+|---:|---:|---:|
+| 0.013s | 0.0066s | **0.0031s** |
+
+FPS = 1000 // 0.0031 = 322
+
+
+#### - Summary
+
+**U-Net** <br/>
+<img src="img/U-Net_Summary.png" width=300> <br/>
+
+**U-Net_light (Our suggestion)** <br/>
+<img src="img/light_Summary.png" width=300> <br/>
+
+#### - Result
+
+The parameter kernel layer has been drastically reduced. <br/>
+
+This task reliably improves the inference speed. <br/>
+
+This is because the features that can be expressed within the fingerprint itself are limited anyway. 
+And because Reconstruction itself is not a task with a clear answer, 
+Performance indicators are more unclear than they are used for segmentation purposes,
+These tasks were possible because only the purpose (modulation with less damage) was achieved. <br/>
+
+<img src="img/Total_Unets.png" width=600>
 
 <br/>
 
