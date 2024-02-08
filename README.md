@@ -123,7 +123,7 @@ FPS = 1000 // 0.0031 = 322
 <img src="img/U-Net_Summary.png" width=300> <br/>
 
 **U-Net_light (Our suggestion)** <br/>
-<img src="img/light_Summary.png" width=300> <br/>
+<img src="img/light_summary.png" width=300> <br/>
 
 #### - Result
 
