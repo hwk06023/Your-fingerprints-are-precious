@@ -155,7 +155,7 @@ When Segmentation is incomplete, Since there is no guarantee that the autoencode
 
 It works well with the original image and the result is as expected. <br/>
 
-5.5ms for inference, 0.0031s for reconstruction, 0.0001s for enhancement. <br/>
+5.5ms for inference(Segment), 0.0031s for reconstruction, 0.0001s for enhancement. <br/>
 So, Total **5.5032ms** for processing. <br/>
 It works **fps 181.5.** <br/>
 
