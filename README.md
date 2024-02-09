@@ -1,10 +1,9 @@
 # Your Fingerprints are precious
 
 ### Project explanation
-The important of cameras in our society is increasing as the demand for Online Education, Video Conference, or SNS increases.  <br/>
-But resents high resolution cameras accidentally expose our important biometric information such as  fingerprints or iris. <br/>
-Exposed fingerprints can easily be copied and can pass electric security. <br/>
-So, we propose to manipulate biometric information automatically that enhance people’s biometric security. <br/><br/><br/>
+The important of cameras in our society is increasing as the demand for Online Education, Video Conference, or SNS increases. But resents high resolution cameras accidentally expose our important biometric information such as  fingerprints or iris. Exposed fingerprints can easily be copied and can pass electric security. <br>
+
+So, we propose to manipulate biometric information automatically that enhance people’s biometric security. <br/><br/>
 
 ### Related paper & news
 **Paper** <br/>
